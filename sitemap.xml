@@ -2,33 +2,33 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.org/categories/</loc>
+    <loc>https://gugu-penguin.github.io/categories/</loc>
     <lastmod>2022-05-10T02:15:08+08:00</lastmod>
   </url><url>
-    <loc>https://example.org/post/first-post/</loc>
+    <loc>https://gugu-penguin.github.io/post/first-post/</loc>
     <lastmod>2022-05-10T02:15:08+08:00</lastmod>
   </url><url>
-    <loc>https://example.org/tags/github/</loc>
+    <loc>https://gugu-penguin.github.io/tags/github/</loc>
     <lastmod>2022-05-10T02:15:08+08:00</lastmod>
   </url><url>
-    <loc>https://example.org/</loc>
+    <loc>https://gugu-penguin.github.io/</loc>
     <lastmod>2022-05-10T02:15:08+08:00</lastmod>
   </url><url>
-    <loc>https://example.org/tags/hugo/</loc>
+    <loc>https://gugu-penguin.github.io/tags/hugo/</loc>
     <lastmod>2022-05-10T02:15:08+08:00</lastmod>
   </url><url>
-    <loc>https://example.org/categories/hugo/</loc>
+    <loc>https://gugu-penguin.github.io/categories/hugo/</loc>
     <lastmod>2022-05-10T02:15:08+08:00</lastmod>
   </url><url>
-    <loc>https://example.org/categories/others/</loc>
+    <loc>https://gugu-penguin.github.io/categories/others/</loc>
     <lastmod>2022-05-10T02:15:08+08:00</lastmod>
   </url><url>
-    <loc>https://example.org/post/</loc>
+    <loc>https://gugu-penguin.github.io/post/</loc>
     <lastmod>2022-05-10T02:15:08+08:00</lastmod>
   </url><url>
-    <loc>https://example.org/tags/</loc>
+    <loc>https://gugu-penguin.github.io/tags/</loc>
     <lastmod>2022-05-10T02:15:08+08:00</lastmod>
   </url><url>
-    <loc>https://example.org/archives/</loc>
+    <loc>https://gugu-penguin.github.io/archives/</loc>
   </url>
 </urlset>

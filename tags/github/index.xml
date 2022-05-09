@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>github on GuGu&#39;s Tech Life</title>
-    <link>https://example.org/tags/github/</link>
+    <link>https://gugu-penguin.github.io/tags/github/</link>
     <description>Recent content in github on GuGu&#39;s Tech Life</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Tue, 10 May 2022 02:15:08 +0800</lastBuildDate><atom:link href="https://example.org/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 10 May 2022 02:15:08 +0800</lastBuildDate><atom:link href="https://gugu-penguin.github.io/tags/github/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>First Post</title>
-      <link>https://example.org/post/first-post/</link>
+      <link>https://gugu-penguin.github.io/post/first-post/</link>
       <pubDate>Tue, 10 May 2022 02:15:08 +0800</pubDate>
       
-      <guid>https://example.org/post/first-post/</guid>
+      <guid>https://gugu-penguin.github.io/post/first-post/</guid>
       <description>&lt;p&gt;Hugo + GitHub 架設個人測試&lt;/p&gt;</description>
     </item>
     
