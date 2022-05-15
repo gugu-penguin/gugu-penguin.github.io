@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on GuGu&#39;s Tech Life</title>
+    <title>Tags on GGP&#39;s Tech Life</title>
     <link>https://gugu-penguin.github.io/tags/</link>
-    <description>Recent content in Tags on GuGu&#39;s Tech Life</description>
+    <description>Recent content in Tags on GGP&#39;s Tech Life</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Tue, 10 May 2022 02:15:08 +0800</lastBuildDate><atom:link href="https://gugu-penguin.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 15 May 2022 00:56:51 +0800</lastBuildDate><atom:link href="https://gugu-penguin.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>github</title>
-      <link>https://gugu-penguin.github.io/tags/github/</link>
-      <pubDate>Tue, 10 May 2022 02:15:08 +0800</pubDate>
+      <title>hugo</title>
+      <link>https://gugu-penguin.github.io/tags/hugo/</link>
+      <pubDate>Sun, 15 May 2022 00:56:51 +0800</pubDate>
       
-      <guid>https://gugu-penguin.github.io/tags/github/</guid>
+      <guid>https://gugu-penguin.github.io/tags/hugo/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>hugo</title>
-      <link>https://gugu-penguin.github.io/tags/hugo/</link>
-      <pubDate>Tue, 10 May 2022 02:15:08 +0800</pubDate>
+      <title>markdown</title>
+      <link>https://gugu-penguin.github.io/tags/markdown/</link>
+      <pubDate>Sun, 15 May 2022 00:56:51 +0800</pubDate>
       
-      <guid>https://gugu-penguin.github.io/tags/hugo/</guid>
+      <guid>https://gugu-penguin.github.io/tags/markdown/</guid>
       <description></description>
     </item>
     

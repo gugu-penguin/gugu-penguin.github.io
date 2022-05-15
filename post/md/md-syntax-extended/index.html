@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+	  
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-28VQM4MLWD"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-28VQM4MLWD');
+	</script>
+    
+    <script type="application/ld+json">
+
+{  
+  "@context":"http://schema.org",
+  "@type":"Website",
+  "@id":"https:\/\/gugu-penguin.github.io\/",
+  "author": {
+    "@type": "Person",
+    "name": "GuGu Penguin",
+    
+    "image": "https://gugu-penguin.github.io/images/cat.jpg"
+    
+  },
+  "name":"GGP\u0027s Tech Life",
+  "description":"Hugo寫文章，繼續學習Markdown的進階語法吧！",
+  "url":"https:\/\/gugu-penguin.github.io\/post\/md\/md-syntax-extended\/",
+  "keywords":"[markdown, hugo]"
+}
+
+</script>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.98.0 with theme Tranquilpeak 0.5.3-BETA">
+<meta name="author" content="GuGu Penguin">
+<meta name="keywords" content="markdown, hugo">
+<meta name="description" content="Hugo寫文章，繼續學習Markdown的進階語法吧！">
+
+
+<meta property="og:description" content="Hugo寫文章，繼續學習Markdown的進階語法吧！">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Markdown語法 : Extended Syntax">
+<meta name="twitter:title" content="Markdown語法 : Extended Syntax">
+<meta property="og:url" content="https://gugu-penguin.github.io/post/md/md-syntax-extended/">
+<meta property="twitter:url" content="https://gugu-penguin.github.io/post/md/md-syntax-extended/">
+<meta property="og:site_name" content="GGP&#39;s Tech Life">
+<meta property="og:description" content="Hugo寫文章，繼續學習Markdown的進階語法吧！">
+<meta name="twitter:description" content="Hugo寫文章，繼續學習Markdown的進階語法吧！">
+<meta property="og:locale" content="zh-tw">
+
+  
+    <meta property="article:published_time" content="2022-05-15T00:56:51">
+  
+  
+    <meta property="article:modified_time" content="2022-05-15T00:56:51">
+  
+  
+  
+    
+      <meta property="article:section" content="markdown">
+    
+  
+  
+    
+      <meta property="article:tag" content="markdown">
+    
+      <meta property="article:tag" content="hugo">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+
+
+  <meta property="og:image" content="https://gugu-penguin.github.io/images/cat.jpg">
+  <meta property="twitter:image" content="https://gugu-penguin.github.io/images/cat.jpg">
+
+
+
+
+  <meta property="og:image" content="https://gugu-penguin.github.io/images/fall-1.jpg">
+  <meta property="twitter:image" content="https://gugu-penguin.github.io/images/fall-1.jpg">
+
+
+  <meta property="og:image" content="https://gugu-penguin.github.io/images/dog-2.jpg">
+  <meta property="twitter:image" content="https://gugu-penguin.github.io/images/dog-2.jpg">
+
+
+    <title>Markdown語法 : Extended Syntax</title>
+
+    <link rel="icon" href="https://gugu-penguin.github.io/images/mushroom.svg">
+    
+
+    
+
+    <link rel="canonical" href="https://gugu-penguin.github.io/post/md/md-syntax-extended/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+    
+    <link rel="stylesheet" href="https://gugu-penguin.github.io/css/style-h6ccsoet3mzkbb0wngshlfbaweimexgqcxj0h5hu4h82olsdzz6wmqdkajm.min.css" />
+    
+    
+      
+        <link rel="stylesheet" href="">
+      
+    
+
+    
+      
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="4">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://gugu-penguin.github.io/" aria-label="去首頁">GGP&#39;s Tech Life</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://gugu-penguin.github.io/#about" aria-label="打開鏈接: /#about">
+    
+    
+    
+      
+        <img class="header-picture" src="https://gugu-penguin.github.io/images/cat.jpg" alt="作者的圖片" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="4">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="https://gugu-penguin.github.io/#about" aria-label="閱讀有關作者的更多信息">
+          <img class="sidebar-profile-picture" src="https://gugu-penguin.github.io/images/cat.jpg" alt="作者的圖片" />
+        </a>
+        <h4 class="sidebar-profile-name">GuGu Penguin</h4>
+        
+          <h5 class="sidebar-profile-bio">Confidence comes from Practice.</h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://gugu-penguin.github.io/" title="Home">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-home" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">首頁</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://gugu-penguin.github.io/categories" title="Categories">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-bookmark" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">分類</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://gugu-penguin.github.io/tags" title="Tags">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-tags" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">標籤</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://gugu-penguin.github.io/archives" title="Archives">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-archive" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">所有文章</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://gugu-penguin.github.io/#about" title="About">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-question" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">關於</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/gugu-penguin" target="_blank" rel="noopener" title="GitHub">
+    
+      <i class="sidebar-button-icon fab fa-lg fa-github" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://gugu-penguin.github.io/index.xml" title="RSS">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-rss" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Atom</span>
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+      
+  <div class="post-header-cover
+              text-left
+              post-header-cover--partial"
+       style="background-image:url('/images/fall-1.jpg')"
+       data-behavior="4">
+    
+      <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title">
+      Markdown語法 : Extended Syntax
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time datetime="2022-05-15T00:56:51&#43;08:00">
+        
+  五月 15, 2022
+
+      </time>
+    
+    
+  
+  
+    <span>分類</span>
+    
+      <a class="category-link" href="https://gugu-penguin.github.io/categories/markdown">markdown</a>
+    
+  
+
+  </div>
+
+</div>
+    
+  </div>
+
+
+      <div id="main" data-behavior="4"
+        class="hasCover
+               hasCoverMetaIn
+               ">
+        <article class="post" id="top">
+          
+          
+          <div class="post-content markdown">
+            <div class="main-content-wrap">
+              <p>本篇內容是學習Markdown語法的擴展語法，基本語法的練習跟Hugo相關設定，前往 🚀 <a href="../md-syntax-basic" target="_blank" >Markdown語法 - Basic Syntax</a>。</p>
+<p>內文會介紹以下幾種擴展語法，可直接點擊前往該段落：</p>
+<ul>
+<li><a href="#table">表格</a></li>
+<li><a href="#footnotes">註腳</a></li>
+<li><a href="#headingid">標題ID與頁內定向跳轉</a></li>
+<li><a href="#strikethrough">刪除線</a></li>
+<li><a href="#tasklists">任務列表</a></li>
+<li><a href="#emoji">表情符號</a></li>
+<li><a href="#url-linking">URL顯示處理</a></li>
+</ul>
+<h2 id="table">表格</h2>
+<p><strong>語法</strong>：
+
+  
+  
+  
+  
+
+
+<figure class="highlight md language-md">
+  <figcaption>
+    
+      <span>tables.md</span>
+    
+  </figcaption>
+  <table>
+    <tbody>
+      <tr>
+        <td class="gutter">
+          <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre>
+        </td>
+        <td class="code">
+          <pre class="code-highlight language-md md"><code class="md">| Syntax | Description |
+| --- | ----------- |
+| Header | Title |
+| Paragraph | Text |
+
+| Left      | Center | Right     |
+| :---        |    :----:   |          ---: |
+| text align left      |  text align center       |  text align right   |</code></pre>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+
+使用三個或以上連字符 &ldquo;-&quot;，創建每列的標題，如果沒有創建標題列，不會產生表格。<br>
+每一欄的對齊方向，則是在連字符的左右選擇性加上 &ldquo;：&quot;。</p>
+<p><strong>顯示效果</strong>：</p>
+<br/>
+
+<table>
+<thead>
+<tr>
+<th>Syntax</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Header</td>
+<td>Title</td>
+</tr>
+<tr>
+<td>Paragraph</td>
+<td>Text</td>
+</tr>
+</tbody>
+</table>
+<br/>
+
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Left</th>
+<th style="text-align:center">Center</th>
+<th style="text-align:right">Right</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">text align left</td>
+<td style="text-align:center">text align center</td>
+<td style="text-align:right">text align right</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="footnotes">註腳</h2>
+<p><strong>語法</strong>：
+
+  
+  
+  
+  
+
+
+<figure class="highlight md language-md">
+  <figcaption>
+    
+      <span>footnotes.md</span>
+    
+  </figcaption>
+  <table>
+    <tbody>
+      <tr>
+        <td class="gutter">
+          <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre>
+        </td>
+        <td class="code">
+          <pre class="code-highlight language-md md"><code class="md">需要使用註腳的地方，該行加上&#34;[^標識符]&#34;，標識符只能是數字或文字，不能包含空格與tab。  
+然後在文章中任一行，添加對應的註腳內容，就會有註腳效果了[^註腳1]。
+
+[^註腳1]: 註腳的內容會顯示在文章的末端，會自動按註腳的順序標號，不受標識符影響。</code></pre>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+</p>
+<p><strong>顯示效果</strong>：</p>
+<p>需要使用註腳的地方，該行末端加上&rdquo;[^標識符]&quot;，標識符只能是數字或文字，不能包含空格與tab。<br>
+然後在文章中任一行，添加對應的註腳內容，就會有註腳效果了<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>。</p>
+<hr>
+<h2 id="headingid">標題ID與頁內定向跳轉</h2>
+<p><strong>語法</strong>：
+
+  
+  
+  
+  
+
+
+<figure class="highlight md language-md">
+  <figcaption>
+    
+      <span>headingid.md</span>
+    
+  </figcaption>
+  <table>
+    <tbody>
+      <tr>
+        <td class="gutter">
+          <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre>
+        </td>
+        <td class="code">
+          <pre class="code-highlight language-md md"><code class="md">##### 標題跳轉測試  {#myid}
+[標題跳轉測試](#myid)  
+
+跳轉到基本語法的[鏈結](../md-syntax-basic#link)</code></pre>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+
+標題後面增加 &ldquo;{#custom-id}&quot;，填入自定義id後，其他的地方就可以透過這個id定向回來。</p>
+<p><strong>顯示效果</strong>：</p>
+<h5 id="myid">標題跳轉測試 </h5>
+<p><a href="#myid">標題跳轉測試</a></p>
+<p>跳轉到基本語法的<a href="../md-syntax-basic#link">鏈結</a></p>
+<hr>
+<h2 id="strikethrough">刪除線</h2>
+<p><strong>語法</strong>：
+
+  
+  
+  
+  
+
+
+<figure class="highlight md language-md">
+  <figcaption>
+    
+      <span>strikethrough.md</span>
+    
+  </figcaption>
+  <table>
+    <tbody>
+      <tr>
+        <td class="gutter">
+          <pre><span class="line">1</span><br></pre>
+        </td>
+        <td class="code">
+          <pre class="code-highlight language-md md"><code class="md">~~這個問題很簡單啊！~~ 對不起，我錯了。</code></pre>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+</p>
+<p><strong>顯示效果</strong>：</p>
+<p><del>這個問題很簡單啊！</del> 對不起，我錯了。</p>
+<hr>
+<h2 id="tasklists">任務列表</h2>
+<p><strong>語法</strong>：
+
+  
+  
+  
+  
+
+
+<figure class="highlight md language-md">
+  <figcaption>
+    
+      <span>tasklists.md</span>
+    
+  </figcaption>
+  <table>
+    <tbody>
+      <tr>
+        <td class="gutter">
+          <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre>
+        </td>
+        <td class="code">
+          <pre class="code-highlight language-md md"><code class="md">出門前檢查隨身物品：
+
+- [x] 手機
+- [ ] 錢包
+- [ ] 鑰匙</code></pre>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+
+顯示效果的部分，方格前會帶黑色的點，Hugo 0,60,0版本前不會有黑色點的部分。<br>
+如果想要移除黑色的點，目前只能透過CSS，或將Markdown handler設回之前的處理器。細節請看 <a href="https://github.com/gohugoio/hugo/issues/6837" target="_blank" >Hugo git issue</a></p>
+<p><strong>顯示效果</strong>：</p>
+<p>出門前檢查隨身物品：</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> 手機</li>
+<li><input disabled="" type="checkbox"> 錢包</li>
+<li><input disabled="" type="checkbox"> 鑰匙</li>
+</ul>
+<hr>
+<h2 id="emoji">表情符號</h2>
+<p>使用方式：</p>
+<ol>
+<li>檢查自己使用的平台是否支援。
+以Hugo為例，要使用表情符號，需要在config.toml中加上 <code>enableEmoji=true</code> 。</li>
+<li>選一個emoji的純文本表示符。
+可以在<a href="https://gist.github.com/rxaviers/7360908" target="_blank" >Emoji List</a> 挑一個試試看。<br>
+範例語法：<code>  :sunflower&#58;:tulip&#58;花圃:sunflower&#58;:tulip&#58; </code></li>
+<li>直接貼在md文本中，在自己的應用平台上看看顯示效果。<br>
+🌻🌷花圃🌻🌷</li>
+</ol>
+<hr>
+<h2 id="url-linking">URL顯示處理</h2>
+<p><strong>語法</strong>：
+
+  
+  
+  
+  
+
+
+<figure class="highlight html language-html">
+  <figcaption>
+    
+      <span>url-linking.md</span>
+    
+  </figcaption>
+  <table>
+    <tbody>
+      <tr>
+        <td class="gutter">
+          <pre><span class="line">1</span><br><span class="line">2</span><br></pre>
+        </td>
+        <td class="code">
+          <pre class="code-highlight language-html html"><code class="html">我的部落格網址是：https://gugu-penguin.github.io/  
+我的部落格網址是：`https://gugu-penguin.github.io/`</code></pre>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+
+使用單行程式碼區塊的語法，可以避免URL字串有特殊效果。</p>
+<p><strong>顯示效果</strong>：</p>
+<p>我的部落格網址是 <a href="https://gugu-penguin.github.io/">https://gugu-penguin.github.io/</a></p>
+<p>我的部落格網址是 <code>https://gugu-penguin.github.io/</code></p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>註腳的內容會顯示在文章的末端，會自動按註腳的順序標號，不受標識符影響。&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+              
+
+
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">標籤</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://gugu-penguin.github.io/tags/markdown/">markdown</a>
+
+  <a class="tag tag--primary tag--small" href="https://gugu-penguin.github.io/tags/hugo/">hugo</a>
+
+                  </div>
+                
+              
+            
+            
+<div class="post-actions-wrap">
+  <nav >
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--disabled">
+          
+              <i class="fa fa-angle-left"></i>
+              <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
+            </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://gugu-penguin.github.io/post/md/md-syntax-basic/" data-tooltip="Markdown語法 : Basic Syntax" aria-label="上一篇: Markdown語法 : Basic Syntax">
+          
+              <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
+              <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+      
+    </ul>
+  </nav>
+<ul class="post-actions post-action-share" >
+  
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="分享這個帖子">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </a>
+    </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://gugu-penguin.github.io/post/md/md-syntax-extended/" title="分享到 Facebook" aria-label="分享到 Facebook">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://gugu-penguin.github.io/post/md/md-syntax-extended/" title="分享到 Twitter" aria-label="分享到 Twitter">
+          <i class="fab fa-twitter" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https://gugu-penguin.github.io/post/md/md-syntax-extended/" title="分享到 Linkedin" aria-label="分享到 Linkedin">
+          <i class="fab fa-linkedin" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+  
+  
+    <li class="post-action">
+      <a class="post-action-btn btn btn--default" href="#disqus_thread" aria-label="發表評論">
+        <i class="far fa-comment"></i>
+      </a>
+    </li>
+  
+  <li class="post-action">
+    
+      <a class="post-action-btn btn btn--default" href="#top" aria-label="回到頂部">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    
+    </a>
+  </li>
+</ul>
+</div>
+
+
+            
+  
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+    <script type="text/javascript">
+      var disqus_config = function() {
+        this.page.url = 'https:\/\/gugu-penguin.github.io\/post\/md\/md-syntax-extended\/';
+        
+          this.page.identifier = '\/post\/md\/md-syntax-extended\/'
+        
+      };
+      (function() {
+        
+        
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+          document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+          return;
+        }
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var disqus_shortname = 'gugu-penguin';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+  
+
+
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2022 GuGu Penguin. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        
+<div class="post-actions-wrap">
+  <nav >
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--disabled">
+          
+              <i class="fa fa-angle-left"></i>
+              <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
+            </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://gugu-penguin.github.io/post/md/md-syntax-basic/" data-tooltip="Markdown語法 : Basic Syntax" aria-label="上一篇: Markdown語法 : Basic Syntax">
+          
+              <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
+              <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+      
+    </ul>
+  </nav>
+<ul class="post-actions post-action-share" >
+  
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="分享這個帖子">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </a>
+    </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://gugu-penguin.github.io/post/md/md-syntax-extended/" title="分享到 Facebook" aria-label="分享到 Facebook">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://gugu-penguin.github.io/post/md/md-syntax-extended/" title="分享到 Twitter" aria-label="分享到 Twitter">
+          <i class="fab fa-twitter" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https://gugu-penguin.github.io/post/md/md-syntax-extended/" title="分享到 Linkedin" aria-label="分享到 Linkedin">
+          <i class="fab fa-linkedin" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+  
+  
+    <li class="post-action">
+      <a class="post-action-btn btn btn--default" href="#disqus_thread" aria-label="發表評論">
+        <i class="far fa-comment"></i>
+      </a>
+    </li>
+  
+  <li class="post-action">
+    
+      <a class="post-action-btn btn btn--default" href="#top" aria-label="回到頂部">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    
+    </a>
+  </li>
+</ul>
+</div>
+
+
+      </div>
+      
+<div id="share-options-bar" class="share-options-bar" data-behavior="4">
+  <i id="btn-close-shareoptions" class="fa fa-times"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgugu-penguin.github.io%2Fpost%2Fmd%2Fmd-syntax-extended%2F" aria-label="分享到 Facebook">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i><span>分享到 Facebook</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fgugu-penguin.github.io%2Fpost%2Fmd%2Fmd-syntax-extended%2F" aria-label="分享到 Twitter">
+          <i class="fab fa-twitter" aria-hidden="true"></i><span>分享到 Twitter</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fgugu-penguin.github.io%2Fpost%2Fmd%2Fmd-syntax-extended%2F" aria-label="分享到 Linkedin">
+          <i class="fab fa-linkedin" aria-hidden="true"></i><span>分享到 Linkedin</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+
+
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-times"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://gugu-penguin.github.io/images/cat.jpg" alt="作者的圖片" />
+    
+    <h4 id="about-card-name">GuGu Penguin</h4>
+    
+      <div id="about-card-bio">Confidence comes from Practice.</div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        Software Engineer
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker-alt"></i>
+        <br/>
+        Taiwan
+      </div>
+    
+  </div>
+</div>
+
+    
+
+    
+  
+    
+      <div id="cover" style="background-image:url('https://gugu-penguin.github.io/images/lake-1.jpg');"></div>
+    
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js" integrity="sha512-z+/WWfyD5tccCukM4VvONpEtLmbAm5LDu7eKiyMQJ9m7OfPEDL7gENyDRL3Yfe8XAuGsS2fS4xSMnl6d30kqGQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script src="https://gugu-penguin.github.io/js/script-yqzy9wdlzix4lbbwdnzvwx3egsne77earqmn73v9uno8aupuph8wfguccut.min.js"></script>
+
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-gE8KAQyFIzV1C9+GZ8TKJHZS2s+n7EjNtC+IMRn1l5+WYJTHOODUM6JSjZhFhqXmc7bG8Av6XXpckA4tYhflnw==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/apache.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-EWROca+bote+7Oaaar1F6y74iZj1r1F9rm/ly7o+/FwJopbBaWtsFDmaKoZDd3QiGU2pGacBirHJNivmGLYrow==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/go.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-GDVzAn0wpx1yVtQsRWmFc6PhJiLBPdUic+h4GWgljBh904O3JU10fk9EKNpVyIoPqkFn54rgL2QBG4BmUTMpiQ==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/http.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-UgZlma8NzkrDb/NWgmLIcTrH7i/CSnLLDRFqCSNF5NGPpjKmzyM25qcoXGOup8+cDakKyaiTDd7N4dyH4YT+IA==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/less.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-lot9koe73sfXIrUvIPM/UEhuMciN56RPyBdOyZgfO53P2lkWyyXN7J+njcxIIBRV+nVDQeiWtiXg+bLAJZDTfg==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/nginx.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-Zd3e7XxHP00TD0Imr0PIfeM0fl0v95kMWuhyAS3Wn1UTSXTkz0OhtRgBAr4JlmADRgiXr4x7lpeUdqaGN8xIog==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/puppet.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-qtqDO052iXMSP+5d/aE/jMtL9vIIGvONgTJziC2K/ZIB1yEGa55WVxGE9/08rSQ62EoDifS9SWVGZ7ihSLhzMA==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/scss.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-1NmkjnEDnwwwcu28KoQF8vs3oaPFokQHbmbtwGhFfeDsQZtVFI8zW2aE9O8yMYdpdyKV/5blE4pSWw4Z/Sv97w==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/stylus.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-B2wSfruPjr8EJL6IIzQr1eAuDwrsfIfccNf/LCEdxELCgC/S/ZMt/Uvk80aD79m7IqOqW+Sw8nbkvha20yZpzg==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/swift.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-28oDiQZGKUVN6wQ7PSLPNipOcmkCALXKwOi7bnkyFf8QiMZQxG9EQoy/iiNx6Zxj2cG2SbVa4dXKigQhu7GiFw==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/yaml.min.js"></script>
+  
+
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+
+
+    
+  </body>
+</html>
+
